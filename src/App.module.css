@@ -1,0 +1,75 @@
+body {
+	background-color: rgb(9, 46, 14);
+	color: #0caf0c;
+	padding: 30px;
+	box-shadow: inset 0px 0px 100px 25px RGBA(0, 0, 0, 0.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: 0;
+}
+
+.crt::before {
+	content: " ";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+	z-index: 2;
+	background-size: 100% 3px, 4px 100%;
+	pointer-events: none;
+}
+
+.crt::after {
+	content: " ";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: rgba(18, 16, 16, 0.1);
+	opacity: 0;
+	z-index: 2;
+	pointer-events: none;
+	animation: flicker 0.05s infinite;
+}
+
+.mainHeader {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+}
+
+.buttonControls {
+	position: absolute;
+	left: 50%;
+	right: 0;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	gap: 20px;
+	padding: 0 20px;
+	
+	flex-direction: column;
+	justify-content: center;
+	/* align-items: center; */
+	max-width: 500px;
+	min-width: 200px;
+}
+
+.socialButtonContainer {
+	display: flex;
+	gap: 10px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 20px;
+	justify-content: center;
+}
