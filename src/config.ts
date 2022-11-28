@@ -12,7 +12,7 @@ export default {
         },
         {
             "text": "Hacking Notes",
-            "url": "https://noets.bullsec.xyz"
+            "url": "https://notes.bullsec.xyz"
         }
     ],
 
